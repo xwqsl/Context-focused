@@ -1,0 +1,1232 @@
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=True, do_lower_case=False, do_test=True, do_train=True, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=32, max_steps=-1, max_target_length=32, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=True, do_lower_case=False, do_test=True, do_train=True, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=32, max_steps=-1, max_target_length=32, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=True, do_lower_case=False, do_test=True, do_train=True, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=32, max_steps=-1, max_target_length=32, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=True, do_lower_case=False, do_test=True, do_train=True, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=32, max_steps=-1, max_target_length=32, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+[[{'text': 'for class Mutation ; Code: public void setReplicationSources ( Set<String> sources ) { requireNonNull ( sources ) ; this . replicationSources = sources ;', 'loss_ids': 0, 'shortenable_ids': 1}, {'text': ' Summarization:', 'loss_ids': 0, 'shortenable_ids': 0}, {'text': '<mask>', 'loss_ids': 1, 'shortenable_ids': 0}], {'guid': 0, 'tgt_text': 'set the replication peers which this mutation originated from'}]
+***** Running training *****
+  Num examples = 6461
+  Batch size = 32
+  Num epoch = 20
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 0
+  eval_ppl = inf
+  global_step = 102
+  train_loss = 43.1961
+  ********************
+Previous best ppl:inf
+Achieve Best ppl:inf
+  ********************
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.07 	 Previous best bleu 0
+  ********************
+ Achieve Best bleu:25.07
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 1
+  eval_ppl = inf
+  global_step = 203
+  train_loss = 19.9551
+  ********************
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=True, do_lower_case=False, do_test=True, do_train=True, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=256, max_steps=-1, max_target_length=128, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=64, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+[[{'text': 'for class Mutation ; Code: public void setReplicationSources ( Set<String> sources ) { requireNonNull ( sources ) ; this . replicationSources = sources ;', 'loss_ids': 0, 'shortenable_ids': 1}, {'text': ' Summarization:', 'loss_ids': 0, 'shortenable_ids': 0}, {'text': '<mask>', 'loss_ids': 1, 'shortenable_ids': 0}], {'guid': 0, 'tgt_text': 'set the replication peers which this mutation originated from'}]
+***** Running training *****
+  Num examples = 6461
+  Batch size = 64
+  Num epoch = 20
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=True, do_lower_case=False, do_test=True, do_train=True, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=256, max_steps=-1, max_target_length=128, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+[[{'text': 'for class Mutation ; Code: public void setReplicationSources ( Set<String> sources ) { requireNonNull ( sources ) ; this . replicationSources = sources ;', 'loss_ids': 0, 'shortenable_ids': 1}, {'text': ' Summarization:', 'loss_ids': 0, 'shortenable_ids': 0}, {'text': '<mask>', 'loss_ids': 1, 'shortenable_ids': 0}], {'guid': 0, 'tgt_text': 'set the replication peers which this mutation originated from'}]
+***** Running training *****
+  Num examples = 6461
+  Batch size = 32
+  Num epoch = 20
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=True, do_lower_case=False, do_test=True, do_train=True, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+[[{'text': 'for class Mutation ; Code: public void setReplicationSources ( Set<String> sources ) { requireNonNull ( sources ) ; this . replicationSources = sources ;', 'loss_ids': 0, 'shortenable_ids': 1}, {'text': ' Summarization:', 'loss_ids': 0, 'shortenable_ids': 0}, {'text': '<mask>', 'loss_ids': 1, 'shortenable_ids': 0}], {'guid': 0, 'tgt_text': 'set the replication peers which this mutation originated from'}]
+***** Running training *****
+  Num examples = 6461
+  Batch size = 32
+  Num epoch = 20
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=True, do_lower_case=False, do_test=True, do_train=True, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+[[{'text': 'for class Mutation ; Code: public void setReplicationSources ( Set<String> sources ) { requireNonNull ( sources ) ; this . replicationSources = sources ;', 'loss_ids': 0, 'shortenable_ids': 1}, {'text': ' Summarization:', 'loss_ids': 0, 'shortenable_ids': 0}, {'text': '<mask>', 'loss_ids': 1, 'shortenable_ids': 0}], {'guid': 0, 'tgt_text': 'set the replication peers which this mutation originated from'}]
+***** Running training *****
+  Num examples = 6461
+  Batch size = 32
+  Num epoch = 20
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 0
+  eval_ppl = inf
+  global_step = 102
+  train_loss = 43.239
+  ********************
+Previous best ppl:inf
+Achieve Best ppl:inf
+  ********************
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 26.26 	 Previous best bleu 0
+  ********************
+ Achieve Best bleu:26.26
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 1
+  eval_ppl = inf
+  global_step = 203
+  train_loss = 18.342
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 27.16 	 Previous best bleu 26.26
+  ********************
+ Achieve Best bleu:27.16
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 2
+  eval_ppl = inf
+  global_step = 304
+  train_loss = 15.4752
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 26.55 	 Previous best bleu 27.16
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 3
+  eval_ppl = inf
+  global_step = 405
+  train_loss = 13.4906
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 26.12 	 Previous best bleu 27.16
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 4
+  eval_ppl = inf
+  global_step = 506
+  train_loss = 11.9241
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.19 	 Previous best bleu 27.16
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 5
+  eval_ppl = inf
+  global_step = 607
+  train_loss = 10.5389
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.5 	 Previous best bleu 27.16
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 6
+  eval_ppl = inf
+  global_step = 708
+  train_loss = 9.3366
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.52 	 Previous best bleu 27.16
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 7
+  eval_ppl = inf
+  global_step = 809
+  train_loss = 8.3592
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.56 	 Previous best bleu 27.16
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 8
+  eval_ppl = inf
+  global_step = 910
+  train_loss = 7.4423
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.05 	 Previous best bleu 27.16
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 9
+  eval_ppl = inf
+  global_step = 1011
+  train_loss = 6.6431
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.78 	 Previous best bleu 27.16
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 10
+  eval_ppl = inf
+  global_step = 1112
+  train_loss = 6.0071
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.74 	 Previous best bleu 27.16
+  ********************
+
+***** Running evaluation *****
+  Num examples = 832
+  Batch size = 32
+  epoch = 11
+  eval_ppl = inf
+  global_step = 1213
+  train_loss = 5.4611
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.68 	 Previous best bleu 27.16
+  ********************
+early stopping!!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 27.16 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 27.04 
+  ********************
+Finish training and take 30m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 27.16 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 27.04 
+  ********************
+Finish training and take 0m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=32, max_steps=-1, max_target_length=32, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.61 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 24.0 
+  ********************
+Finish training and take 0m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=32, max_steps=-1, max_target_length=32, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.61 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 26.07 
+  ********************
+Finish training and take 0m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=32, max_steps=-1, max_target_length=32, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.61 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 23.54 
+  ********************
+Finish training and take 0m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=32, max_steps=-1, max_target_length=32, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.61 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 23.11 
+  ********************
+Finish training and take 0m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=32, max_steps=-1, max_target_length=32, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.61 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 22.8 
+  ********************
+Finish training and take 0m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=32, max_steps=-1, max_target_length=32, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.61 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 23.76 
+  ********************
+Finish training and take 0m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=32, max_steps=-1, max_target_length=32, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='0', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 25.61 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 23.69 
+  ********************
+Finish training and take 0m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=True, do_lower_case=False, do_test=True, do_train=True, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+[[{'text': 'for class SubQueueSelectorCacheBroker ; Code: private void persistCache ( ) { LOG . debug ( "Persisting selector cache . . . . " ) ; try { FileOutputStream fos = new FileOutputStream ( persistFile ) ; try { ObjectOutputStream out = new ObjectOutputStream ( fos ) ; try { out . writeObject ( subSelectorCache ) ; } finally { out . flush ( ) ; out . close ( ) ; } } catch ( IOException ex ) { LOG . error ( "Unable to persist selector cache", ex ) ; } finally { fos . close ( ) ; } } catch ( IOException ex ) { LOG . error ( "Unable to access file[ { } ]", persistFile, ex ) ; }', 'loss_ids': 0, 'shortenable_ids': 1}, {'text': ' Summarization:', 'loss_ids': 0, 'shortenable_ids': 0}, {'text': '<mask>', 'loss_ids': 1, 'shortenable_ids': 0}], {'guid': 0, 'tgt_text': 'persist the selector cache'}]
+***** Running training *****
+  Num examples = 63271
+  Batch size = 32
+  Num epoch = 20
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 0
+  eval_ppl = inf
+  global_step = 990
+  train_loss = 48.1249
+  ********************
+Previous best ppl:inf
+Achieve Best ppl:inf
+  ********************
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 16.47 	 Previous best bleu 0
+  ********************
+ Achieve Best bleu:16.47
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 1
+  eval_ppl = inf
+  global_step = 1979
+  train_loss = 33.7584
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 17.7 	 Previous best bleu 16.47
+  ********************
+ Achieve Best bleu:17.7
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 2
+  eval_ppl = inf
+  global_step = 2968
+  train_loss = 29.9878
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 17.94 	 Previous best bleu 17.7
+  ********************
+ Achieve Best bleu:17.94
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 3
+  eval_ppl = inf
+  global_step = 3957
+  train_loss = 26.8395
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 17.88 	 Previous best bleu 17.94
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 4
+  eval_ppl = inf
+  global_step = 4946
+  train_loss = 24.3485
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.24 	 Previous best bleu 17.94
+  ********************
+ Achieve Best bleu:18.24
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 5
+  eval_ppl = inf
+  global_step = 5935
+  train_loss = 22.2048
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 17.86 	 Previous best bleu 18.24
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 6
+  eval_ppl = inf
+  global_step = 6924
+  train_loss = 20.3351
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.58 	 Previous best bleu 18.24
+  ********************
+ Achieve Best bleu:18.58
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 7
+  eval_ppl = inf
+  global_step = 7913
+  train_loss = 18.7415
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.49 	 Previous best bleu 18.58
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 8
+  eval_ppl = inf
+  global_step = 8902
+  train_loss = 17.3639
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 17.99 	 Previous best bleu 18.58
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 9
+  eval_ppl = inf
+  global_step = 9891
+  train_loss = 16.1161
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.55 	 Previous best bleu 18.58
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 10
+  eval_ppl = inf
+  global_step = 10880
+  train_loss = 15.0226
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.62 	 Previous best bleu 18.58
+  ********************
+ Achieve Best bleu:18.62
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 11
+  eval_ppl = inf
+  global_step = 11869
+  train_loss = 14.1295
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.01 	 Previous best bleu 18.62
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 12
+  eval_ppl = inf
+  global_step = 12858
+  train_loss = 13.2901
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.54 	 Previous best bleu 18.62
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 13
+  eval_ppl = inf
+  global_step = 13847
+  train_loss = 12.5821
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.49 	 Previous best bleu 18.62
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 14
+  eval_ppl = inf
+  global_step = 14836
+  train_loss = 11.9866
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.55 	 Previous best bleu 18.62
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 15
+  eval_ppl = inf
+  global_step = 15825
+  train_loss = 11.4645
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.63 	 Previous best bleu 18.62
+  ********************
+ Achieve Best bleu:18.63
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 16
+  eval_ppl = inf
+  global_step = 16814
+  train_loss = 11.0243
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.47 	 Previous best bleu 18.63
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 17
+  eval_ppl = inf
+  global_step = 17803
+  train_loss = 10.693
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.27 	 Previous best bleu 18.63
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 18
+  eval_ppl = inf
+  global_step = 18792
+  train_loss = 10.4303
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.14 	 Previous best bleu 18.63
+  ********************
+
+***** Running evaluation *****
+  Num examples = 8896
+  Batch size = 32
+  epoch = 19
+  eval_ppl = inf
+  global_step = 19781
+  train_loss = 10.2582
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 18.14 	 Previous best bleu 18.63
+  ********************
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 19.25 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 18.81 
+  ********************
+Finish training and take 7h23m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 19.25 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 18.81 
+  ********************
+Finish training and take 5m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 19.25 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 17.07 
+  ********************
+Finish training and take 5m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 19.25 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 15.54 
+  ********************
+Finish training and take 5m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 19.25 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 15.39 
+  ********************
+Finish training and take 5m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 19.25 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 15.03 
+  ********************
+Finish training and take 5m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 19.25 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 13.83 
+  ********************
+Finish training and take 7m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 19.25 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 15.41 
+  ********************
+Finish training and take 8m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=True, do_lower_case=False, do_test=True, do_train=True, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+[[{'text': 'for class State ; Code: public void remove ( String key ) { stateMap . remove ( key ) ;', 'loss_ids': 0, 'shortenable_ids': 1}, {'text': ' Summarization:', 'loss_ids': 0, 'shortenable_ids': 0}, {'text': '<mask>', 'loss_ids': 1, 'shortenable_ids': 0}], {'guid': 0, 'tgt_text': 'Removes a state object'}]
+***** Running training *****
+  Num examples = 30284
+  Batch size = 32
+  Num epoch = 20
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 0
+  eval_ppl = inf
+  global_step = 474
+  train_loss = 44.7592
+  ********************
+Previous best ppl:inf
+Achieve Best ppl:inf
+  ********************
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 21.78 	 Previous best bleu 0
+  ********************
+ Achieve Best bleu:21.78
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 1
+  eval_ppl = inf
+  global_step = 947
+  train_loss = 30.0228
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.67 	 Previous best bleu 21.78
+  ********************
+ Achieve Best bleu:22.67
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 2
+  eval_ppl = inf
+  global_step = 1420
+  train_loss = 27.612
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.47 	 Previous best bleu 22.67
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 3
+  eval_ppl = inf
+  global_step = 1893
+  train_loss = 25.3102
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.89 	 Previous best bleu 22.67
+  ********************
+ Achieve Best bleu:22.89
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 4
+  eval_ppl = inf
+  global_step = 2366
+  train_loss = 23.3085
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.32 	 Previous best bleu 22.89
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 5
+  eval_ppl = inf
+  global_step = 2839
+  train_loss = 21.5063
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.59 	 Previous best bleu 22.89
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 6
+  eval_ppl = inf
+  global_step = 3312
+  train_loss = 19.8446
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.08 	 Previous best bleu 22.89
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 7
+  eval_ppl = inf
+  global_step = 3785
+  train_loss = 18.33
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.3 	 Previous best bleu 22.89
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 8
+  eval_ppl = inf
+  global_step = 4258
+  train_loss = 16.9699
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.19 	 Previous best bleu 22.89
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 9
+  eval_ppl = inf
+  global_step = 4731
+  train_loss = 15.7993
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.03 	 Previous best bleu 22.89
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 10
+  eval_ppl = inf
+  global_step = 5204
+  train_loss = 14.7394
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.02 	 Previous best bleu 22.89
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 11
+  eval_ppl = inf
+  global_step = 5677
+  train_loss = 13.7926
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.06 	 Previous best bleu 22.89
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 12
+  eval_ppl = inf
+  global_step = 6150
+  train_loss = 12.9578
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 21.73 	 Previous best bleu 22.89
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 13
+  eval_ppl = inf
+  global_step = 6623
+  train_loss = 12.2601
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.05 	 Previous best bleu 22.89
+  ********************
+early stopping!!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.77 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 22.86 
+  ********************
+Finish training and take 2h33m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.77 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 21.47 
+  ********************
+Finish training and take 3m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.77 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 20.1 
+  ********************
+Finish training and take 3m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.77 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 19.95 
+  ********************
+Finish training and take 3m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.77 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 20.01 
+  ********************
+Finish training and take 3m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.77 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 20.35 
+  ********************
+Finish training and take 3m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.77 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 20.01 
+  ********************
+Finish training and take 3m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.77 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 20.9 
+  ********************
+Finish training and take 3m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.77 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 21.38 
+  ********************
+Finish training and take 3m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.77 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 21.33 
+  ********************
+Finish training and take 3m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=False, do_lower_case=False, do_test=True, do_train=False, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.77 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 21.31 
+  ********************
+Finish training and take 3m
+Namespace(adam_epsilon=1e-08, add_lang_ids=False, add_task_prefix=False, beam_size=10, config_name='', data_dir='./data', do_eval=True, do_lower_case=False, do_test=True, do_train=True, early_stop_threshold=10, eval_batch_size=32, eval_steps=-1, gradient_accumulation_steps=2, lang='java', learning_rate=5e-05, load_model_path=None, local_rank=-1, log_name='./java.log', max_grad_norm=1.0, max_source_length=64, max_steps=-1, max_target_length=64, model_name_or_path=None, model_type=None, no_cuda=False, num_train_epochs=20, output_dir='../model', seed=42, tokenizer_name='', train_batch_size=32, train_steps=-1, visible_gpu='1', warm_up_ratio=0.1, weight_decay=0.0)
+Process rank: -1, device: cuda, n_gpu: 1, distributed training: False
+Model created!!
+[[{'text': 'State Code: public void remove ( String key ) { stateMap . remove ( key ) ;', 'loss_ids': 0, 'shortenable_ids': 1}, {'text': ' Summarization:', 'loss_ids': 0, 'shortenable_ids': 0}, {'text': '<mask>', 'loss_ids': 1, 'shortenable_ids': 0}], {'guid': 0, 'tgt_text': 'Removes a state object'}]
+***** Running training *****
+  Num examples = 30284
+  Batch size = 32
+  Num epoch = 20
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 0
+  eval_ppl = inf
+  global_step = 474
+  train_loss = 44.6339
+  ********************
+Previous best ppl:inf
+Achieve Best ppl:inf
+  ********************
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 21.66 	 Previous best bleu 0
+  ********************
+ Achieve Best bleu:21.66
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 1
+  eval_ppl = inf
+  global_step = 947
+  train_loss = 29.846
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.64 	 Previous best bleu 21.66
+  ********************
+ Achieve Best bleu:22.64
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 2
+  eval_ppl = inf
+  global_step = 1420
+  train_loss = 27.3923
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.65 	 Previous best bleu 22.64
+  ********************
+ Achieve Best bleu:22.65
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 3
+  eval_ppl = inf
+  global_step = 1893
+  train_loss = 25.1051
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.84 	 Previous best bleu 22.65
+  ********************
+ Achieve Best bleu:22.84
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 4
+  eval_ppl = inf
+  global_step = 2366
+  train_loss = 23.0272
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.3 	 Previous best bleu 22.84
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 5
+  eval_ppl = inf
+  global_step = 2839
+  train_loss = 21.1835
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.57 	 Previous best bleu 22.84
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 6
+  eval_ppl = inf
+  global_step = 3312
+  train_loss = 19.5363
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.23 	 Previous best bleu 22.84
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 7
+  eval_ppl = inf
+  global_step = 3785
+  train_loss = 18.0066
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.51 	 Previous best bleu 22.84
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 8
+  eval_ppl = inf
+  global_step = 4258
+  train_loss = 16.6508
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.05 	 Previous best bleu 22.84
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 9
+  eval_ppl = inf
+  global_step = 4731
+  train_loss = 15.4533
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.15 	 Previous best bleu 22.84
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 10
+  eval_ppl = inf
+  global_step = 5204
+  train_loss = 14.3743
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.11 	 Previous best bleu 22.84
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 11
+  eval_ppl = inf
+  global_step = 5677
+  train_loss = 13.4528
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 21.98 	 Previous best bleu 22.84
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 12
+  eval_ppl = inf
+  global_step = 6150
+  train_loss = 12.6216
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 21.31 	 Previous best bleu 22.84
+  ********************
+
+***** Running evaluation *****
+  Num examples = 4864
+  Batch size = 32
+  epoch = 13
+  eval_ppl = inf
+  global_step = 6623
+  train_loss = 11.9139
+  ********************
+Previous best ppl:inf
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 21.73 	 Previous best bleu 22.84
+  ********************
+early stopping!!!
+reload model from None
+BLEU file: ./data/java/valid.jsonl
+  bleu-4 = 22.9 
+  ********************
+BLEU file: ./data/java/test.jsonl
+  bleu-4 = 22.81 
+  ********************
+Finish training and take 2h28m
