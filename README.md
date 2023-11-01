@@ -5,21 +5,40 @@ Developers often describe specific contextual information in code comments to fa
 ## Code Summarization
 
 To run the code, put the data in the following fold: ./summarization/data/java
+
 Then, to fine-tune the CodeT5 model:
 ```bash
 cd summarization
 python finetune_t5_gene.py --visible_gpu <GPU> --lang java --max_source_length 256 --max_target_length 64 --log_name=../java.log --do_train --do_eval --do_test
 ```
 
-to fine-tune the CodeT5 model:
+to prompt-tune the CodeT5 model:
 ```bash
 cd summarization
 python prompt_t5.py --visible_gpu <GPU> --lang java --max_source_length 256 --max_target_length 64 --log_name=../java.log --do_train --do_eval --do_test
 ```
-PLBAER model is similar, and the result will be saved in model/test_1.output
+PLBART model is similar, and the result will be saved in model/test_1.output
 
 ## Evaluation
 
-To better evaluation the comment generation results, we adopt three BLEU variants and a semantic similarity metric.
-The three BLEU variants is borrowed from the previous work ["On the Evaluation of Neural Code Summarization"](https://arxiv.org/abs/2107.07112) and there code can be accessed from here: https://github.com/DeepSoftwareAnalytics/CodeSumEvaluation
-The similarity metric is borrowed from the previous work  ["Semantic similarity metrics for evaluating source code summarization"](https://dl.acm.org/doi/abs/10.1145/3524610.3527909) and there code can be accessed from here: https://github.com/similarityMetrics/similarityMetrics
+To better evaluation the comment generation results, we adopt three BLEU variants and a semantic similarity metric, namely SentenceBert Similarity.
+
+### BLEU
+
+The three BLEU variants is borrowed from the previous work
+
+["On the Evaluation of Neural Code Summarization"](https://arxiv.org/abs/2107.07112) 
+
+and there code can be accessed from here: 
+
+https://github.com/DeepSoftwareAnalytics/CodeSumEvaluation
+
+### SentenceBert Similarity
+
+The similarity metric is borrowed from the previous work  
+
+["Semantic similarity metrics for evaluating source code summarization"](https://dl.acm.org/doi/abs/10.1145/3524610.3527909) 
+
+and there code can be accessed from here:
+
+https://github.com/similarityMetrics/similarityMetrics
